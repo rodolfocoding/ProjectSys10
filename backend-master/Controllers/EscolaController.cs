@@ -5,7 +5,7 @@ using Backend.Models;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Backoffice.Controllers
+namespace Backend.Controllers
 {
     [ApiController]
     [Route("v1/escolas")]

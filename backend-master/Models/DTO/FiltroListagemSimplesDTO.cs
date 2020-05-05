@@ -1,6 +1,6 @@
-namespace backend.Models.DTO
+namespace Backend.Models.DTO
 {
-    public class FiltroListagemSimplesDTO
+    public class FiltroListagemSimplesDTO : FiltroBase
     {
         public int? IdTurma { get; set; }
         public string NomeTurma { get; set; }

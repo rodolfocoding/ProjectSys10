@@ -8,7 +8,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Backoffice.Controllers
+namespace Backend.Controllers
 {
     [ApiController]
     [Authorize]

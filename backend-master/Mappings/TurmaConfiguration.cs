@@ -2,7 +2,7 @@ using Backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace backend.Mappings
+namespace Backend.Mappings
 {
     public class TurmaConfiguration : IEntityTypeConfiguration<Turma>
     {

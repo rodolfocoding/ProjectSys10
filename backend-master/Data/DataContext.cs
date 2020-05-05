@@ -1,3 +1,4 @@
+using Backend.Mappings;
 using Backend.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,12 @@ namespace Backend.Data
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new EscolaConfiguration());
+            modelBuilder.ApplyConfiguration(new TurmaConfiguration());
         }
 
         public DbSet<Escola> Escolas { get; set; }

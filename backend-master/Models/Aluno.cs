@@ -6,7 +6,7 @@ namespace Backend.Models
     {
         public int AlunoId { get; set; }
         public string Nome { get; set; }
-        public bool Ativo { get; set; }
+        public bool Ativo { get; set; } = true;
         [JsonIgnore]
         public Turma Turma { get; set; }
         public int TurmaId { get; set; }
